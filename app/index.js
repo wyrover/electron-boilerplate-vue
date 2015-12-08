@@ -1,9 +1,14 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import './app.css';
 import AppView from './containers/App'
-import configRouter from './routes'
+import routes from './routes'
 
-const router = configRouter(Vue)
+Vue.use(VueRouter)
+
+const router = new VueRouter()
+
+router.map(routes)
 router.start(AppView, '#root')
 
 if (process.env.NODE_ENV !== 'production') {
@@ -12,4 +17,5 @@ if (process.env.NODE_ENV !== 'production') {
   // is envified so that Uglify can eliminate this
   // module and its dependencies as dead code.
   // require('./createDevToolsWindow')(store);
+  require('debug-menu').install()
 }

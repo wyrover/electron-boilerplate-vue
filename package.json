@@ -41,6 +41,7 @@
   "devDependencies": {
     "asar": "^0.8.0",
     "css-loader": "0.21.0",
+    "debug-menu": "0.2.0",
     "del": "^2.0.1",
     "electron-packager": "^5.0.2",
     "electron-prebuilt": "^0.35.2",
