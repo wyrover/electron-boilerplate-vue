@@ -9,7 +9,7 @@ const baseConfig = require('./webpack.config.base');
 
 const config = Object.create(baseConfig);
 
-config.devtool = 'source-map';
+// config.devtool = '#source-map';
 
 config.entry = './app/index';
 
@@ -35,12 +35,6 @@ config.plugins.push(
     '__DEV__': false,
     'process.env': {
       'NODE_ENV': JSON.stringify('production')
-    }
-  }),
-  new webpack.optimize.UglifyJsPlugin({
-    compressor: {
-      screw_ie8: true,
-      warnings: false
     }
   }),
   new ExtractTextPlugin('style.css', { allChunks: true })
