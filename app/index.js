@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import './app.css';
-import AppView from './containers/App'
+import AppView from './components/App'
 import routes from './routes'
 
 Vue.use(VueRouter)
