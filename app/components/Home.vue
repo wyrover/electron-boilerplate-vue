@@ -1,13 +1,12 @@
 <template>
-  <h2> {{ message }} </h2>
+  <p class="subtitle"> {{ message }} </p>
 </template>
-
 
 <script>
   export default {
     data () {
       return {
-        message: 'Hello Home Component!',
+        message: 'Welcome Home!',
       }
     },
   }
