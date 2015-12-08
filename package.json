@@ -1,7 +1,7 @@
 {
-  "name": "electron-react-boilerplate",
-  "version": "0.7.0-beta",
-  "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
+  "name": "electron-vue-boilerplate",
+  "version": "0.0.1-beta",
+  "description": "Electron application boilerplate based on Vue, Vue Router, Webpack, Vue Hot Reload for rapid application development.",
   "main": "main.js",
   "scripts": {
     "lint": "eslint app test *.js",
@@ -17,16 +17,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chentsulin/electron-react-boilerplate.git"
+    "url": "git+https://github.com/bradstewart/electron-vue-boilerplate.git"
   },
-  "author": {
-    "name": "C. T. Lin",
-    "email": "chentsulin@gmail.com",
-    "url": "https://github.com/chentsulin"
-  },
+  "authors": [
+    {
+      "name": "C. T. Lin",
+      "email": "chentsulin@gmail.com",
+      "url": "https://github.com/chentsulin"
+    },{
+      "name": "Brad Stewart"
+    }
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chentsulin/electron-react-boilerplate/issues"
+    "url": "https://github.com/bradstewart/electron-vue-boilerplate/issues"
   },
   "keywords": [
     "electron",
@@ -37,7 +41,7 @@
     "webpack",
     "react-hot"
   ],
-  "homepage": "https://github.com/chentsulin/electron-react-boilerplate#readme",
+  "homepage": "https://github.com/bradstewart/electron-vue-boilerplate#readme",
   "devDependencies": {
     "asar": "^0.8.0",
     "css-loader": "0.21.0",

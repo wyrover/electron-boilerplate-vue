@@ -1,18 +1,9 @@
-# electron-react-boilerplate
+# electron-vue-boilerplate
 
-[![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Dependency Status][david_img]][david_site]
+> Live editing development on desktop app. Based (heavily) on [@chentsulin](https://github.com/chentsulin)'s awesome [electron-react-boilerplate](https://github.com/chentsulin/electron-react-boilerplate).
 
-![](./erb-logo.png)
+[Electron](http://electron.atom.io/) application boilerplate based on [Vue](https://vuejs.org/), [Vue Router](https://github.com/vuejs/vue-router), [Webpack](http://webpack.github.io/docs/), [Vue Loader](https://github.com/vuejs/vue-loader/) for rapid application development. 
 
-> Live editing development on desktop app
-
-[Electron](http://electron.atom.io/) application boilerplate based on [React](https://facebook.github.io/react/), [Redux](https://github.com/rackt/redux), [React Router](https://github.com/rackt/react-router), [Webpack](http://webpack.github.io/docs/), [React Transform HMR](https://github.com/gaearon/react-transform-hmr) for rapid application development
-
-## Screenshot
-
-![](https://cloud.githubusercontent.com/assets/3382565/10557547/b1f07a4e-74e3-11e5-8d27-79ab6947d429.gif)
 
 ## Install
 
@@ -21,7 +12,6 @@ Install dependencies.
 ```bash
 $ npm install
 ```
-
 
 ## Run
 
@@ -42,12 +32,6 @@ npm run start-hot
 
 - see [electron-debug](https://github.com/sindresorhus/electron-debug) for more detail information.
 
-#### Toggle Redux DevTools
-
-<kbd>Ctrl+H</kbd>
-
-- see [redux-devtools-dock-monitor](https://github.com/gaearon/redux-devtools-dock-monitor) for more detail information.
-
 
 ## Externals
 
@@ -62,14 +46,10 @@ externals: [
 You can find those lines in the file.
 
 
-## CSS Modules support
-
-Import css file as [css-modules](https://github.com/css-modules/css-modules) using `.module.css`.
-
-
 ## Package
 
 ```bash
+npm run build
 npm run package
 ```
 
@@ -85,31 +65,12 @@ Use `electron-packager` to pack your app with `--all` options for darwin (osx), 
 
 `test`, `tools`, `release` folder and devDependencies in `package.json` will be ignored by default.
 
-#### Default Ignore modules
-
-We add some module's `peerDependencies` to ignore option as default for application size reduction.
-
-- `babel-core` is required by `babel-loader` and its size is ~19 MB
-- `node-libs-browser` is required by `webpack` and its size is ~3MB.
-
-> **Note:** If you want to use any above modules in runtime, for example: `require('babel/register')`, you should move them form `devDependencies` to `dependencies`.
 
 #### Building windows apps from non-windows platforms
 
 Please checkout [Building windows apps from non-windows platforms](https://github.com/maxogden/electron-packager#building-windows-apps-from-non-windows-platforms).
 
 
-## Native-like UI
-
-If you want to have native-like User Interface (OS X El Capitan and Windows 10), [react-desktop](https://github.com/gabrielbull/react-desktop) may perfect suit for you.
-
-
 ## License
-MIT © [C. T. Lin](https://github.com/chentsulin)
+MIT © [C. T. Lin](https://github.com/chentsulin), [Brad Stewart](https://github.com/bradstewart)
 
-[npm-image]: https://img.shields.io/npm/v/electron-react-boilerplate.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/electron-react-boilerplate
-[travis-image]: https://travis-ci.org/chentsulin/electron-react-boilerplate.svg?branch=master
-[travis-url]: https://travis-ci.org/chentsulin/electron-react-boilerplate
-[david_img]: https://img.shields.io/david/chentsulin/electron-react-boilerplate.svg
-[david_site]: https://david-dm.org/chentsulin/electron-react-boilerplate
