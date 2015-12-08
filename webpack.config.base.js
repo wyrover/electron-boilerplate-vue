@@ -5,21 +5,20 @@ const path = require('path');
 
 module.exports = {
   module: {
-    loaders: [{
-      test: /\.jsx?$/,
-      loaders: ['babel-loader'],
-      exclude: /node_modules/
-    }, {
-      test: /\.vue$/, 
-      loader: 'vue',
-    }, {
+    loaders: [
+      {
+        test: /\.vue$/, 
+        loader: 'vue',
+      }, 
+      {
         test: /\.js$/,
-        exclude: /(node_modules|bower_components|modules)/,
+        exclude: /(node_modules|bower_components)/,
         loader: 'babel',
         query: {
           presets: ['es2015'],
         },
-      }]
+      }
+    ]
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -27,7 +26,7 @@ module.exports = {
     libraryTarget: 'commonjs2'
   },
   resolve: {
-    extensions: ['', '.js', '.jsx', '.vue'],
+    extensions: ['', '.js', '.vue'],
     packageMains: ['webpack', 'browser', 'web', 'browserify', ['jam', 'main'], 'main']
   },
   plugins: [
