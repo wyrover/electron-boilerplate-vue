@@ -1,13 +1,16 @@
-import React from 'react';
-import { Route, IndexRoute } from 'react-router';
-import App from './containers/App';
-import HomePage from './containers/HomePage';
-import CounterPage from './containers/CounterPage';
+import VueRouter from 'vue-router'
+import Home from './components/Home'
 
+export default function (Vue) {
+  Vue.use(VueRouter)
 
-export default (
-  <Route path="/" component={App}>
-    <IndexRoute component={HomePage} />
-    <Route path="/counter" component={CounterPage} />
-  </Route>
-);
+  let router = new VueRouter()
+
+  router.map({
+    '/': {
+      component: Home,
+    },
+  })
+
+  return router
+}
