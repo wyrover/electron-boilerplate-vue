@@ -13,6 +13,16 @@ Scope of this project:
 # Quick start
 The only development dependency of this project is [Node.js](https://nodejs.org). So just make sure you have it installed.
 Then type few commands known to every Node developer...
+
+**npm 中文镜像安装**
+
+```
+cnpm install eslint eslint-loader --save
+cnpm install asar babel-loader electron-prebuilt fs-jetpack gulp gulp-util q tree-kill vinyl-source-stream webpack yargs --save-dev
+
+```
+
+
 ```
 git clone https://github.com/bradstewart/electron-boilerplate-vue.git
 cd electron-boilerplate-vue
